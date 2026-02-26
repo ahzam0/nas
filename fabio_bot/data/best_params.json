@@ -1,0 +1,22 @@
+{
+  "metrics": {
+    "initial_balance": 50000.0,
+    "final_balance": 83125.0,
+    "total_pnl": 33125.0,
+    "total_trades": 265,
+    "win_rate": 80.0,
+    "profit_factor": 3.272727272727273,
+    "max_drawdown": 875.0,
+    "max_drawdown_pct": 1.0526315789473684,
+    "sharpe_ratio": 9.506672596277996
+  },
+  "params": {
+    "min_signal_strength": 0.7,
+    "min_delta": 480,
+    "rr_first": 0.82,
+    "rr_second": 1.8,
+    "min_delta_multiplier": 1.4,
+    "big_trade_edge": 2,
+    "big_trade_threshold": 32
+  }
+}

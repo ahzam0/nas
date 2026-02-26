@@ -1,0 +1,86 @@
+alerts:
+  alert_recipient: ''
+  email_enabled: false
+  smtp_host: ''
+  smtp_pass: ''
+  smtp_port: 587
+  smtp_user: ''
+bookmap:
+  data_provider: Tradovate
+  interval_seconds: 15
+broker: tradovate
+logging:
+  file: logs/fabio_bot.log
+  level: INFO
+  trade_log: logs/trades.csv
+ml:
+  model_path: data/ml_signal_model.pkl
+  regime_allowed:
+  - 0
+  - 1
+  regime_window: 20
+  threshold: 0.52
+mode: simulation
+risk:
+  atr_stop_multiplier: 1.5
+  max_consecutive_losses: 3
+  max_daily_drawdown_pct: 0.03
+  max_daily_trades: 20
+  tick_value: 5
+scalp:
+  big_trade_edge: 2
+  big_trade_threshold: 27
+  interval_seconds: 60
+  max_daily_trades: 80
+  min_delta: 383
+  min_delta_multiplier: 1.19
+  min_signal_strength: 0.58
+  rr_first: 0.62
+  rr_second: 1.28
+strategy:
+  absorption_ticks: 3
+  big_trade_edge: 2
+  big_trade_threshold: 32
+  delta_sensitivity: 1.0
+  fvg_min_ticks: 5
+  max_hold_seconds: 60
+  min_delta: 480
+  min_delta_multiplier: 1.4
+  min_signal_strength: 0.7
+  require_absorption: true
+  require_at_structure: true
+  risk_pct: 0.01
+  session_end: '16:00'
+  session_start: 09:30
+  symbol: XAUUSD
+  use_globex: false
+  vah_val_pct: 0.7
+targets:
+  rr_first: 0.82
+  rr_second: 1.8
+  scale_out_pct: 0.6
+  trail_breakeven_ticks: 4
+telegram:
+  alpaca_key_id: PKGZUAFIWM6M722UHDRWD6PPNN
+  alpaca_secret_key: 7P6dMxQpDsp3ux2Vy4yC3Ln3YjaStRAmyQCTteRfU3Pk
+  alpaca_symbol: QQQ
+  binance_symbol: BTCUSDT
+  bot_token: 8510793606:AAE553KsIe0E6rAskRN-fUqM0H57_UN92zY
+  chat_id: '8309667442'
+  data_source: yahoo
+  interval: 1m
+  interval_seconds: 60
+  period: 7d
+  symbol: MNQ=F
+  use_ml_filter: false
+  use_regime_filter: true
+tradovate:
+  app_id: fabio_bot
+  app_version: '1.0'
+  base_url: https://demo.tradovateapi.com
+  client_id: ${TRADOVATE_CID}
+  client_secret: ${TRADOVATE_SEC}
+  contract_id: null
+  password: ${TRADOVATE_PASS}
+  symbol: NQ
+  username: ${TRADOVATE_USER}
